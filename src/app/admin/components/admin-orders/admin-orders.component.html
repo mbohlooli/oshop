@@ -1,0 +1,7 @@
+<h1>Orders</h1>
+<modern-table
+  [link]="'/orders/'"
+  [key]="'name'"
+  [data]="orders$ | async"
+  [columns]="{ name: 1, datePlaced:1 }">
+</modern-table>

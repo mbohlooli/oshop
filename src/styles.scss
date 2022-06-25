@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+$primary-color: #c1d62e;
+$primary-color-hover: #b1c522;
+
+body {
+  padding-top: 80px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1.5rem;
+}
+
+.navbar{
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.navbar-light .navbar-brand {
+  color: $primary-color;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: $primary-color-hover;
+}
+
+.list-group-item.active {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: #000000;
+}
+
+.my-btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: #000000;
+}
+
+.my-btn-primary:hover {
+  background-color: $primary-color-hover;
+  border-color: $primary-color-hover;
+  color: #000000;
+}
+
+.my-btn-primary.disabled, .my-btn-primary:disabled {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.form-control:focus {
+  border-color: $primary-color;
+}
+
+.card-body{
+  padding-right: 1.25rem;
+  padding-left: 15px;
+  padding-top: 1.25rem;
+}
+
+.dropdown-item:focus {
+  color: #000000;
+  background-color: $primary-color;
+}
+
+.dropdown-item:active {
+  color: #000000;
+  background-color: $primary-color;
+}
+
+.my-btn-primary:focus, .my-btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(193, 214, 46, 0.5);
+}
+.my-btn-primary:not(:disabled):not(.disabled):active, .my-btn-primary:not(:disabled):not(.disabled).active,
+.show > .my-btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: $primary-color-hover;
+  border-color: $primary-color;
+}
+
+.my-btn-primary:not(:disabled):not(.disabled):active:focus, .my-btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .my-btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(193, 214, 46, 0.5);
+}
+
+
+.my-btn-warning {
+  background-color: #ff9307;
+  border-color: #ff9307;
+  color: #000000;
+}
+
+.my-btn-warning:not(:disabled):hover {
+  background-color: #d37a05;
+  border-color: #d37a05;
+  color: #000000;
+}
+
+.my-btn-warning.disabled, .my-btn-warning:disabled {
+  background-color: #ff9307;
+  border-color: #ff9307;
+}
+
+.my-btn-warning:focus, .my-btn-warning.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 147, 7, 0.5);
+}
+.my-btn-warning:not(:disabled):not(.disabled):active, .my-btn-warning:not(:disabled):not(.disabled).active,
+.show > .my-btn-warning.dropdown-toggle {
+  color: #000;
+  background-color: #d37a05;
+  border-color: #ff9307;
+}
+
+.my-btn-warn:not(:disabled):not(.disabled):active:focus, .my-btn-warn:not(:disabled):not(.disabled).active:focus,
+.show > .my-btn-warn.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 147, 7, 0.5);
+}
+
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: $primary-color;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(193, 214, 46, 0.5);
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #b3d7ff;
+}
+
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $primary-color;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+  background-color: $primary-color;
+}
+
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
+}
+
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba(193, 214, 46, 0.5);
+}
+
+.custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
+  background-color: rgba(193, 214, 46, 0.5);
+}

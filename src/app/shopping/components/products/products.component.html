@@ -1,0 +1,23 @@
+
+<div class="row">
+  <div class="col-3">
+    <div class="sticky-top" style="top: 80px !important;">
+      <input
+        [(ngModel)]="query"
+        (keyup)="applyFilter()"
+        style="margin-bottom: 10px;"
+        type="text" class="form-control" placeholder="Search...">
+        <product-filter [category]="category"></product-filter>
+    </div>
+  </div>
+  <div class="col">
+    <div class="row" *ngIf="cart$ | async as cart">
+      <ng-container *ngFor="let p of filteredProducts; let i = index; let last = last">
+        <div class="col-6">
+          <product-card [product]="p" [shopping-cart]="cart"></product-card>
+        </div>
+        <div *ngIf="((i+1) % 2 == 0) || last" class="w-100" style="margin-top: 15px; margin-bottom: 15px;"></div>
+      </ng-container>
+    </div>
+  </div>
+</div>

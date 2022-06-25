@@ -1,0 +1,8 @@
+
+<div class="row">
+  <p>
+    <a routerLink="/admin/products/new" class="btn my-btn-primary">New Product</a>
+  </p>
+  <div class="w-100"></div>
+  <modern-table [key]="'title'" [columns]="{ title: 1, price: 1 }" [data]="products$ | async" [link]="'/admin/products/'"></modern-table>
+</div>
